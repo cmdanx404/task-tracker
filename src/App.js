@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import TaskInput from "./components/TaskInput";
 import TaskList from "./components/TaskList";
+import FilterButtons from "./components/FilterButtons";
 import "./App.css";
 
 function App() {
   const [tasks, setTasks] = useState([]);
+  const [filter, setFilter] = useState("all"); // all | completed | pending
 
   // Load tasks from localStorage
   useEffect(() => {
@@ -35,11 +37,19 @@ function App() {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
+  // Filter tasks
+  const filteredTasks = tasks.filter((task) => {
+    if (filter === "completed") return task.completed;
+    if (filter === "pending") return !task.completed;
+    return true; // all
+  });
+
   return (
     <div className="app-container">
       <h1>Task Tracker</h1>
       <TaskInput addTask={addTask} />
-      <TaskList tasks={tasks} toggleTask={toggleTask} deleteTask={deleteTask} />
+      <FilterButtons setFilter={setFilter} filter={filter} />
+      <TaskList tasks={filteredTasks} toggleTask={toggleTask} deleteTask={deleteTask} />
     </div>
   );
 }
