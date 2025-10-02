@@ -37,7 +37,7 @@ function App() {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
-  // Filter tasks
+  // Apply filter to tasks
   const filteredTasks = tasks.filter((task) => {
     if (filter === "completed") return task.completed;
     if (filter === "pending") return !task.completed;
@@ -49,7 +49,12 @@ function App() {
       <h1>Task Tracker</h1>
       <TaskInput addTask={addTask} />
       <FilterButtons setFilter={setFilter} filter={filter} />
-      <TaskList tasks={filteredTasks} toggleTask={toggleTask} deleteTask={deleteTask} />
+      <TaskList
+        tasks={filteredTasks}
+        toggleTask={toggleTask}
+        deleteTask={deleteTask}
+        filter={filter} // 👈 pass filter here
+      />
     </div>
   );
 }
