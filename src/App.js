@@ -1,14 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import TaskInput from "./components/TaskInput";
+import TaskList from "./components/TaskList";
+import "./App.css";
 
 function App() {
   const [tasks, setTasks] = useState([]);
-  const [input, setInput] = useState("");
 
-  const addTask = () => {
-    if (input.trim() === "") return;
-    const newTask = { id: Date.now(), text: input, completed: false };
+  // Load tasks from localStorage
+  useEffect(() => {
+    const saved = JSON.parse(localStorage.getItem("tasks"));
+    if (saved) setTasks(saved);
+  }, []);
+
+  // Save tasks to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+
+  const addTask = (text) => {
+    if (text.trim() === "") return;
+    const newTask = { id: Date.now(), text, completed: false };
     setTasks([...tasks, newTask]);
-    setInput("");
   };
 
   const toggleTask = (id) => {
@@ -24,36 +36,10 @@ function App() {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div className="app-container">
       <h1>Task Tracker</h1>
-
-      {/* Input Field */}
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Enter a task..."
-      />
-      <button onClick={addTask}>Add Task</button>
-
-      {/* Task List */}
-      <ul style={{ listStyle: "none", padding: 0 }}>
-        {tasks.map((task) => (
-          <li key={task.id} style={{ margin: "10px 0" }}>
-            <span
-              onClick={() => toggleTask(task.id)}
-              style={{
-                textDecoration: task.completed ? "line-through" : "none",
-                cursor: "pointer",
-                marginRight: "10px",
-              }}
-            >
-              {task.text}
-            </span>
-            <button onClick={() => deleteTask(task.id)}>❌</button>
-          </li>
-        ))}
-      </ul>
+      <TaskInput addTask={addTask} />
+      <TaskList tasks={tasks} toggleTask={toggleTask} deleteTask={deleteTask} />
     </div>
   );
 }
