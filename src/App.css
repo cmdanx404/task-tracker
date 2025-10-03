@@ -1,15 +1,106 @@
 .app-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-top: 50px;
   font-family: Arial, sans-serif;
 }
 
-input {
-  padding: 8px;
-  margin-right: 8px;
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+li span {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 16px;
+  color: #444;
 }
 
 button {
-  padding: 8px 12px;
+  margin-left: 6px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+/* 🎨 Button Colors */
+button.edit-btn {
+  background: #007bff;
+  color: #fff;
+}
+button.edit-btn:hover {
+  background: #0056b3;
+}
+
+button.complete-btn {
+  background: #28a745;
+  color: #fff;
+}
+button.complete-btn:hover {
+  background: #1e7e34;
+}
+
+button.pending-btn {
+  background: #ffc107;
+  color: #333;
+}
+button.pending-btn:hover {
+  background: #e0a800;
+}
+
+button.delete-btn {
+  background: #dc3545;
+  color: #fff;
+}
+button.delete-btn:hover {
+  background: #a71d2a;
+}
+
+button.save-btn {
+  background: #17a2b8;
+  color: #fff;
+}
+button.save-btn:hover {
+  background: #117a8b;
+}
+
+button.cancel-btn {
+  background: #6c757d;
+  color: #fff;
+}
+button.cancel-btn:hover {
+  background: #565e64;
+}
+
+input[type="text"] {
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex-grow: 1;
+  margin-right: 6px;
 }
