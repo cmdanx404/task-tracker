@@ -8,7 +8,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [filter, setFilter] = useState("all"); // all | completed | pending
 
-  // Load tasks from localStorage
+  // Load tasks from localStorage on mount
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("tasks"));
     if (saved) setTasks(saved);
@@ -19,12 +19,14 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
+  // Add new task
   const addTask = (text) => {
     if (text.trim() === "") return;
     const newTask = { id: Date.now(), text, completed: false };
     setTasks([...tasks, newTask]);
   };
 
+  // Toggle complete / pending
   const toggleTask = (id) => {
     setTasks(
       tasks.map((task) =>
@@ -33,11 +35,8 @@ function App() {
     );
   };
 
-  const deleteTask = (id) => {
-    setTasks(tasks.filter((task) => task.id !== id));
-  };
-
-  const editTask = (id, newText) => {
+  // Update task text (editing)
+  const updateTask = (id, newText) => {
     setTasks(
       tasks.map((task) =>
         task.id === id ? { ...task, text: newText } : task
@@ -45,11 +44,16 @@ function App() {
     );
   };
 
-  // Filter tasks
+  // Delete a task
+  const deleteTask = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
+
+  // Apply filters
   const filteredTasks = tasks.filter((task) => {
     if (filter === "completed") return task.completed;
     if (filter === "pending") return !task.completed;
-    return true; // all
+    return true;
   });
 
   return (
@@ -57,12 +61,12 @@ function App() {
       <h1>Task Tracker</h1>
       <TaskInput addTask={addTask} />
       <FilterButtons setFilter={setFilter} filter={filter} />
-      <TaskList 
-        tasks={filteredTasks} 
-        toggleTask={toggleTask} 
-        deleteTask={deleteTask} 
-        editTask={editTask}
-        filter={filter} 
+      <TaskList
+        tasks={filteredTasks}
+        toggleTask={toggleTask}
+        deleteTask={deleteTask}
+        updateTask={updateTask}
+        filter={filter}
       />
     </div>
   );
