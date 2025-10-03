@@ -5,7 +5,7 @@ function TaskList({ tasks, toggleTask, deleteTask, updateTask, filter }) {
   const [editingId, setEditingId] = useState(null);
   const [editText, setEditText] = useState("");
 
-  const startEditing = (task) => {
+  const startEdit = (task) => {
     setEditingId(task.id);
     setEditText(task.text);
   };
@@ -18,14 +18,12 @@ function TaskList({ tasks, toggleTask, deleteTask, updateTask, filter }) {
     setEditText("");
   };
 
+  // Empty state handling
   if (tasks.length === 0) {
-    return (
-      <p>
-        {filter === "all"
-          ? "No tasks yet, add one above 👆"
-          : "No tasks found"}
-      </p>
-    );
+    if (filter === "all") {
+      return <p>No tasks yet, add one above 👆</p>;
+    }
+    return <p>No tasks found</p>;
   }
 
   return (
@@ -39,29 +37,33 @@ function TaskList({ tasks, toggleTask, deleteTask, updateTask, filter }) {
                 value={editText}
                 onChange={(e) => setEditText(e.target.value)}
               />
-              <button className="save-btn" onClick={() => saveEdit(task.id)}>
-                Save
+              <button
+                className="save-btn"
+                onClick={() => saveEdit(task.id)}
+              >
+                💾 Save
               </button>
-              <button className="cancel-btn" onClick={() => setEditingId(null)}>
-                Cancel
+              <button
+                className="cancel-btn"
+                onClick={() => setEditingId(null)}
+              >
+                ✖ Cancel
               </button>
             </>
           ) : (
             <>
-              <span
-                className={`task-text ${task.completed ? "completed" : ""}`}
-              >
+              <span className={`task-text ${task.completed ? "completed" : ""}`}>
                 {task.text}
               </span>
               <div className="task-actions">
                 <button
                   className="edit-btn"
-                  onClick={() => startEditing(task)}
+                  onClick={() => startEdit(task)}
                 >
                   ✏️ Edit
                 </button>
                 <button
-                  className="toggle-btn"
+                  className={task.completed ? "pending-btn" : "complete-btn"}
                   onClick={() => toggleTask(task.id)}
                 >
                   {task.completed ? "Mark as Pending" : "Mark as Complete"}
