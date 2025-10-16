@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Personal Learning Portfolio for HTML practice">
+    <title>Daniel's Learning Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+
+<body>
+
+<header>
+    <h1>Daniel's Learning Portfolio</h1>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is <strong>Daniel Madjus</strong>. I’m learning HTML to improve my <em>web development</em> skills. 
+           <mark>This page is for educational practice only.</mark></p>
+        <blockquote cite="https://developer.mozilla.org">
+            “HTML is the backbone of the web.”
+        </blockquote>
+        <p>I started learning HTML on <time datetime="2025-08-15">August 15, 2025</time>.</p>
+        <abbr title="HyperText Markup Language">HTML</abbr> is fun!
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills & Goals</h2>
+        <ul>
+            <li>HTML Basics</li>
+            <li>CSS Styling</li>
+            <li>JavaScript (Beginner)</li>
+        </ul>
+        <ol>
+            <li>Master HTML tags</li>
+            <li>Understand accessibility</li>
+            <li>Build real projects</li>
+        </ol>
+        <dl>
+            <dt>HTML</dt><dd>Intermediate</dd>
+            <dt>CSS</dt><dd>Beginner</dd>
+        </dl>
+
+        <p>HTML Practice Progress:</p>
+        <progress value="80" max="100">80%</progress>
+        <p>Daily Study Hours: <meter value="2.5" min="0" max="5">2.5 hours</meter></p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects Showcase</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>Portfolio Website</h3>
+                <p>A personal profile website built with HTML and CSS to practice layouts, navigation, and styling.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Quiz App (Python)</h3>
+                <p>A beginner-friendly Python quiz app with multiple-choice questions, timer, and scoring system.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <h3>To-Do List (FastAPI)</h3>
+                <p>A simple web-based task manager built with FastAPI backend and basic HTML front-end.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <figure>
+            <img src="https://via.placeholder.com/400x250" alt="Placeholder image">
+            <figcaption>My placeholder profile picture</figcaption>
+        </figure>
+        <video width="100%" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </section>
+
+    <!-- Aside Section -->
+    <aside>
+        <h2>Quick Info</h2>
+        <details>
+            <summary>Fun Fact</summary>
+            I can code for 4 hours straight when learning something exciting!
+        </details>
+    </aside>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Send a Message</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <label for="topic">Topic:</label>
+                <select id="topic" name="topic">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>HTML Tags Reference Table</h2>
+        <table>
+            <caption>Common HTML Tags</caption>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>&lt;p&gt;</td><td>Paragraph</td></tr>
+                <tr><td>&lt;h1&gt; - &lt;h6&gt;</td><td>Headings</td></tr>
+                <tr><td>&lt;a&gt;</td><td>Link</td></tr>
+                <tr><td>&lt;img&gt;</td><td>Image</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="2">End of Table</td></tr>
+            </tfoot>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Daniel's Practice Site | Built with 💚 for learning</p>
+</footer>
+
+</body>
+</html>

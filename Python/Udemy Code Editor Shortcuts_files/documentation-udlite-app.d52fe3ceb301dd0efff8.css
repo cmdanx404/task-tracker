@@ -1,0 +1,23 @@
+.api-method--spacing-row--PpxxA td {
+  block-size: 3.2rem;
+}
+.api-method--api-endpoint--4t2rS {
+  word-break: break-all;
+}
+.documentation__main .table-container .api-method--api-params-table--80EhD {
+  min-inline-size: 80rem;
+}
+.api-method--th-description--fyLzt {
+  min-inline-size: 18rem;
+}
+.api-method--submit-row--veas1 {
+  display: flex;
+  align-items: center;
+  margin-block-start: 1.6rem;
+}
+.api-method--submit-row--veas1 > * + * {
+  margin-inline-start: 1.6rem;
+}
+
+
+/*# sourceMappingURL=documentation-udlite-app.d52fe3ceb301dd0efff8.css.map*/

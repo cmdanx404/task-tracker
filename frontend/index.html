@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>ZamarSync MVP</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem}
+    textarea{width:100%;height:160px}
+    input, textarea{padding:8px;border:1px solid #ccc;border-radius:4px}
+    button{padding:8px 12px;margin-right:8px}
+    .song{border:1px solid #eee;padding:8px;border-radius:6px;margin:8px 0}
+  </style>
+</head>
+<body>
+  <h1>ZamarSync — MVP (placeholder AI)</h1>
+  <p>Simple demo: create songs, list, edit, delete, and use placeholder grammar check.</p>
+
+  <section id="composer">
+    <h2>Create / Edit Song</h2>
+    <input id="title" placeholder="Song title"/><br/><br/>
+    <textarea id="lyrics" placeholder="Write lyrics here..."></textarea><br/><br/>
+    <button id="createBtn">Create</button>
+    <button id="grammarBtn">Grammar Check Lyrics</button>
+    <div id="grammarResult" style="margin-top:12px;color:#333"></div>
+  </section>
+
+  <hr/>
+  <h2>Saved Songs</h2>
+  <div id="songs"></div>
+
+<script>
+const apiBase = 'http://localhost:8000'
+
+async function listSongs(){
+  try {
+    const res = await fetch(apiBase + '/songs')
+    const data = await res.json()
+    const container = document.getElementById('songs')
+    container.innerHTML = ''
+    if(data.length === 0){
+      container.innerHTML = '<p><em>No songs yet — create one above.</em></p>'
+      return
+    }
+    data.forEach(s=>{
+      const div = document.createElement('div')
+      div.className = 'song'
+      div.innerHTML = '<strong>' + escapeHtml(s.title) + '</strong><pre>' + escapeHtml(s.lyrics) + '</pre>'
+      const deleteBtn = document.createElement('button')
+      deleteBtn.textContent='Delete'
+      deleteBtn.onclick = async ()=>{ await fetch(apiBase+'/songs/'+s.id,{method:'DELETE'}); listSongs() }
+      const editBtn = document.createElement('button')
+      editBtn.textContent='Edit'
+      editBtn.onclick = ()=> {
+        document.getElementById('title').value = s.title
+        document.getElementById('lyrics').value = s.lyrics
+        document.getElementById('createBtn').dataset.editId = s.id
+        document.getElementById('createBtn').textContent = 'Save'
+      }
+      div.appendChild(editBtn)
+      div.appendChild(deleteBtn)
+      container.appendChild(div)
+    })
+  } catch (e) {
+    document.getElementById('songs').innerHTML = '<p style="color:red">Cannot reach backend. Make sure backend is running at http://localhost:8000</p>'
+  }
+}
+
+function escapeHtml(text){ return String(text).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])) }
+
+document.getElementById('createBtn').addEventListener('click', async ()=>{
+  const id = document.getElementById('createBtn').dataset.editId
+  const title = document.getElementById('title').value.trim()
+  const lyrics = document.getElementById('lyrics').value.trim()
+  if(!title || !lyrics){ alert('Please add title and lyrics'); return }
+  if(id){
+    await fetch(apiBase+'/songs/'+id, {method:'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify({title,lyrics})})
+    delete document.getElementById('createBtn').dataset.editId
+    document.getElementById('createBtn').textContent='Create'
+  } else {
+    await fetch(apiBase+'/songs',{method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({title,lyrics})})
+  }
+  document.getElementById('title').value=''; document.getElementById('lyrics').value=''
+  listSongs()
+})
+
+document.getElementById('grammarBtn').addEventListener('click', async ()=>{
+  const lyrics = document.getElementById('lyrics').value
+  if(!lyrics) { alert('Add lyrics first'); return }
+  const res = await fetch(apiBase + '/ai/grammar', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({text: lyrics})})
+  const data = await res.json()
+  document.getElementById('grammarResult').innerHTML = '<h3>Grammar Check Result</h3><pre>' + escapeHtml(data.corrected) + '</pre><small>' + escapeHtml(data.notes) + '</small>'
+})
+
+listSongs()
+</script>
+</body>
+</html>

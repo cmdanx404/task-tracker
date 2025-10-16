@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Personal Learning Portfolio for HTML practice">
+    <title>My Demo Website
+    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #4CAF50, #81C784);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        figure img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        aside {
+            background: #E8F5E9;
+            padding: 10px;
+            border-left: 4px solid #4CAF50;
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background: #4CAF50;
+            color: white;
+        }
+        form {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        input, textarea, select, button {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #388E3C;
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        progress, meter {
+            width: 100%;
+            height: 20px;
+        }
+        details {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to my Demo Website!</h1>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is <strong>Daniel Madjus</strong>. I’m learning HTML to improve my <em>web development</em> skills. 
+           <mark>This page is for educational practice only.</mark></p>
+        <blockquote cite="https://developer.mozilla.org">
+            “HTML is the backbone of the web.”
+        </blockquote>
+        <p>I started learning HTML on <time datetime="2025-08-15">August 15, 2025</time>.</p>
+        <abbr title="HyperText Markup Language">HTML</abbr> is fun!
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills & Goals</h2>
+        <ul>
+            <li>HTML Basics</li>
+            <li>CSS Styling</li>
+            <li>JavaScript (Beginner)</li>
+        </ul>
+        <ol>
+            <li>Master HTML tags</li>
+            <li>Understand accessibility</li>
+            <li>Build real projects</li>
+        </ol>
+        <dl>
+            <dt>HTML</dt><dd>Intermediate</dd>
+            <dt>CSS</dt><dd>Beginner</dd>
+        </dl>
+
+        <p>HTML Practice Progress:</p>
+        <progress value="70" max="100">70%</progress>
+        <p>Daily Study Hours: <meter value="2" min="0" max="5">2 hours</meter></p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <figure>
+            <img src="https://via.placeholder.com/400x250" alt="Placeholder image">
+            <figcaption>My placeholder profile picture</figcaption>
+        </figure>
+        <video width="100%" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </section>
+
+    <!-- Aside Section -->
+    <aside>
+        <h2>Quick Info</h2>
+        <details>
+            <summary>Fun Fact</summary>
+            I can code for 4 hours straight when learning something exciting!
+        </details>
+    </aside>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Send a Message</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <label for="topic">Topic:</label>
+                <select id="topic" name="topic">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>HTML Tags Reference Table</h2>
+        <table>
+            <caption>Common HTML Tags</caption>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>&lt;p&gt;</td><td>Paragraph</td></tr>
+                <tr><td>&lt;h1&gt; - &lt;h6&gt;</td><td>Headings</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="2">End of Table</td></tr>
+            </tfoot>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Daniel's Practice Site | Built with 💚 for learning</p>
+</footer>
+
+</body>
+</html>

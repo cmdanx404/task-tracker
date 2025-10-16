@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Profile</h1>
+        <p>A practice portfolio website using HTML & CSS</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m currently learning web development, starting with HTML and CSS. 
+           This is my practice profile demo website where I apply what I’ve studied so far.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <article>
+            <h3>Project 1: Demo Website</h3>
+            <p>A simple profile demo site built with HTML & CSS for practice.</p>
+        </article>
+        <article>
+            <h3>Project 2: Mini Portfolio</h3>
+            <p>Expanding on layout and design using semantic HTML elements.</p>
+        </article>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Profile Demo</td>
+                    <td>HTML & CSS practice website</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Responsive Portfolio</td>
+                    <td>Next step: make it mobile-friendly</td>
+                    <td>In Progress</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <figure>
+            <img src="https://via.placeholder.com/200" alt="Sample image">
+            <figcaption>Sample Work 1</figcaption>
+        </figure>
+        <figure>
+            <img src="https://via.placeholder.com/200" alt="Sample image">
+            <figcaption>Sample Work 2</figcaption>
+        </figure>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Profile Demo | Made with ❤️ while learning HTML & CSS</p>
+    </footer>
+</body>
+</html>

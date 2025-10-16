@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0114)https://algocademy.com/blog/the-ultimate-guide-to-structuring-and-organizing-code-projects-for-maximum-efficiency/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="alternate" type="application/rss+xml" title="AlgoCademy Blog » Feed" href="https://algocademy.com/blog/feed/">
+<link rel="alternate" type="application/rss+xml" title="AlgoCademy Blog » Comments Feed" href="https://algocademy.com/blog/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="AlgoCademy Blog » The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency Comments Feed" href="https://algocademy.com/blog/the-ultimate-guide-to-structuring-and-organizing-code-projects-for-maximum-efficiency/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/algocademy.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/style.min.css" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="foobox-free-min-css" href="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/foobox.free.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="algocademy-style-css" href="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-css" href="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/css2" type="text/css" media="all">
+<script type="text/javascript" src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script type="text/javascript" src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="foobox-free-min-js-before">
+/* <![CDATA[ */
+/* Run FooBox FREE (v2.7.17) */
+var FOOBOX = window.FOOBOX = {
+	ready: true,
+	disableOthers: false,
+	o: {wordpress: { enabled: true }, countMessage:'image %index of %total', excludes:'.fbx-link,.nofoobox,.nolightbox,a[href*="pinterest.com/pin/create/button/"]', affiliate : { enabled: false }},
+	selectors: [
+		".gallery", ".wp-block-gallery", ".wp-caption", ".wp-block-image", "a:has(img[class*=wp-image-])", ".foobox"
+	],
+	pre: function( $ ){
+		// Custom JavaScript (Pre)
+		
+	},
+	post: function( $ ){
+		// Custom JavaScript (Post)
+		
+		// Custom Captions Code
+		
+	},
+	custom: function( $ ){
+		// Custom Extra JS
+		
+	}
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/foobox.free.min.js.download" id="foobox-free-min-js"></script>
+<link rel="https://api.w.org/" href="https://algocademy.com/blog/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://algocademy.com/blog/wp-json/wp/v2/posts/7942"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://algocademy.com/blog/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.6.2">
+<link rel="canonical" href="https://algocademy.com/blog/the-ultimate-guide-to-structuring-and-organizing-code-projects-for-maximum-efficiency/">
+<link rel="shortlink" href="https://algocademy.com/blog/?p=7942">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://algocademy.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Falgocademy.com%2Fblog%2Fthe-ultimate-guide-to-structuring-and-organizing-code-projects-for-maximum-efficiency%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://algocademy.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Falgocademy.com%2Fblog%2Fthe-ultimate-guide-to-structuring-and-organizing-code-projects-for-maximum-efficiency%2F&amp;format=xml">
+<link rel="preload" as="style" href="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/prettify.css"><link rel="icon" href="https://algocademy.com/blog/wp-content/uploads/2020/06/algocademy-logo-150x150.png" sizes="32x32">
+<link rel="icon" href="https://algocademy.com/blog/wp-content/uploads/2020/06/algocademy-logo.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://algocademy.com/blog/wp-content/uploads/2020/06/algocademy-logo.png">
+<meta name="msapplication-TileImage" content="https://algocademy.com/blog/wp-content/uploads/2020/06/algocademy-logo.png">
+<link rel="stylesheet" type="text/css" href="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/prettify.css"><script src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/wp-emoji-release.min.js.download" defer=""></script><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style></head>
+
+<body class="post-template-default single single-post postid-7942 single-format-standard wp-custom-logo"><div id="MathJax_Message" style="display: none;"></div>
+
+<div class="navbar">
+    <div class="navbar-container">
+        <a href="https://algocademy.com/blog/" class="brand">
+            <img src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/logo-dark.svg" alt="AlgoCademy Blog" class="logo _40px">        </a>
+        
+        <!--
+        <div class="menu-button">
+            <img src="https://algocademy.com/blog/wp-content/themes/algocademy/images/menu-icon.svg" alt="Menu" class="icon _32px">
+        </div>
+        -->
+        <nav class="nav-menu">
+            <a href="https://algocademy.com/" class="cta green">
+    <span class="desktop-text">Start Coding for FREE</span>
+    <span class="mobile-text"></span>
+</a>
+        </nav>
+    </div>
+</div>
+
+<article class="single-post-content">
+    <header class="single-post-header">
+        <h1 class="single-post-title">The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency</h1>
+    </header>
+
+            <div class="featured-image">
+            <img width="1024" height="585" src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/compressed_image-55-1024x585.webp" class="attachment-large size-large wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://algocademy.com/blog/wp-content/uploads/2025/06/compressed_image-55-1024x585.webp 1024w, https://algocademy.com/blog/wp-content/uploads/2025/06/compressed_image-55-300x171.webp 300w, https://algocademy.com/blog/wp-content/uploads/2025/06/compressed_image-55-768x439.webp 768w, https://algocademy.com/blog/wp-content/uploads/2025/06/compressed_image-55-1536x878.webp 1536w, https://algocademy.com/blog/wp-content/uploads/2025/06/compressed_image-55.webp 1792w" sizes="(max-width: 1024px) 100vw, 1024px">        </div>
+    
+    <div class="post-content">
+        <p>Proper code organization is the foundation of successful software development. Whether you’re a solo developer or part of a large team, having a well-structured codebase can significantly impact productivity, maintainability, and collaboration. This comprehensive guide explores best practices for structuring and organizing code projects across different programming paradigms, languages, and project sizes.</p>
+<h2>Why Code Organization Matters</h2>
+<p>Before diving into specific strategies, let’s understand why code organization is crucial:</p>
+<ul>
+<li><strong>Maintainability</strong>: Well-organized code is easier to update, fix, and extend.</li>
+<li><strong>Readability</strong>: A logical structure helps developers quickly understand how the project works.</li>
+<li><strong>Scalability</strong>: Good organization accommodates growth without requiring major restructuring.</li>
+<li><strong>Collaboration</strong>: Clear organization enables team members to work effectively together.</li>
+<li><strong>Onboarding</strong>: New developers can get up to speed faster with a well-structured project.</li>
+<li><strong>Testing</strong>: Properly organized code is easier to test thoroughly.</li>
+</ul>
+<h2>Universal Principles of Code Organization</h2>
+<p>Regardless of your programming language or project type, these principles apply universally:</p>
+<h3>1. Follow the Single Responsibility Principle</h3>
+<p>Each component (function, class, module) should have one responsibility and one reason to change. This creates more maintainable, reusable, and testable code.</p>
+<p>For example, instead of having a monolithic function that validates data, processes it, and updates the database, split it into three separate functions:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="com"><span class="com">// Bad approach</span></span><span class="pln"><span class="pln">
+</span></span><span class="kwd"><span class="kwd">function</span></span><span class="pln"><span class="pln"> processUserData</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln">
+  </span></span><span class="com"><span class="com">// Validation logic</span></span><span class="pln"><span class="pln">
+  </span></span><span class="kwd"><span class="kwd">if</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">(!</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">email </span></span><span class="pun"><span class="pun">||</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">!</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">name</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln">
+    </span></span><span class="kwd"><span class="kwd">throw</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">new</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Error</span></span><span class="pun"><span class="pun">(</span></span><span class="str"><span class="str">'Invalid data'</span></span><span class="pun"><span class="pun">);</span></span><span class="pln"><span class="pln">
+  </span></span><span class="pun"><span class="pun">}</span></span><span class="pln"><span class="pln">
+  
+  </span></span><span class="com"><span class="com">// Processing logic</span></span><span class="pln"><span class="pln">
+  </span></span><span class="kwd"><span class="kwd">const</span></span><span class="pln"><span class="pln"> processedData </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln">
+    </span></span><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln">
+    createdAt</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">new</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Date</span></span><span class="pun"><span class="pun">(),</span></span><span class="pln"><span class="pln">
+    status</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'active'</span></span><span class="pln"><span class="pln">
+  </span></span><span class="pun"><span class="pun">};</span></span><span class="pln"><span class="pln">
+  
+  </span></span><span class="com"><span class="com">// Database update logic</span></span><span class="pln"><span class="pln">
+  database</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">users</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">update</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">id</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> processedData</span></span><span class="pun"><span class="pun">);</span></span><span class="pln"><span class="pln">
+  
+  </span></span><span class="kwd"><span class="kwd">return</span></span><span class="pln"><span class="pln"> processedData</span></span><span class="pun"><span class="pun">;</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">}</span></span><span class="pln"><span class="pln">
+
+</span></span><span class="com"><span class="com">// Better approach</span></span><span class="pln"><span class="pln">
+</span></span><span class="kwd"><span class="kwd">function</span></span><span class="pln"><span class="pln"> validateUserData</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln">
+  </span></span><span class="kwd"><span class="kwd">if</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">(!</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">email </span></span><span class="pun"><span class="pun">||</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">!</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">name</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln">
+    </span></span><span class="kwd"><span class="kwd">throw</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">new</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Error</span></span><span class="pun"><span class="pun">(</span></span><span class="str"><span class="str">'Invalid data'</span></span><span class="pun"><span class="pun">);</span></span><span class="pln"><span class="pln">
+  </span></span><span class="pun"><span class="pun">}</span></span><span class="pln"><span class="pln">
+  </span></span><span class="kwd"><span class="kwd">return</span></span><span class="pln"><span class="pln"> userData</span></span><span class="pun"><span class="pun">;</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">}</span></span><span class="pln"><span class="pln">
+
+</span></span><span class="kwd"><span class="kwd">function</span></span><span class="pln"><span class="pln"> enrichUserData</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln">
+  </span></span><span class="kwd"><span class="kwd">return</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln">
+    </span></span><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln">
+    createdAt</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">new</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Date</span></span><span class="pun"><span class="pun">(),</span></span><span class="pln"><span class="pln">
+    status</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'active'</span></span><span class="pln"><span class="pln">
+  </span></span><span class="pun"><span class="pun">};</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">}</span></span><span class="pln"><span class="pln">
+
+</span></span><span class="kwd"><span class="kwd">function</span></span><span class="pln"><span class="pln"> saveUserData</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln">
+  </span></span><span class="kwd"><span class="kwd">return</span></span><span class="pln"><span class="pln"> database</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">users</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">update</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">id</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> userData</span></span><span class="pun"><span class="pun">);</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">}</span></span><span class="pln"><span class="pln">
+
+</span></span><span class="kwd"><span class="kwd">function</span></span><span class="pln"><span class="pln"> processUserData</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln">
+  </span></span><span class="kwd"><span class="kwd">const</span></span><span class="pln"><span class="pln"> validData </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> validateUserData</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">userData</span></span><span class="pun"><span class="pun">);</span></span><span class="pln"><span class="pln">
+  </span></span><span class="kwd"><span class="kwd">const</span></span><span class="pln"><span class="pln"> enrichedData </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> enrichUserData</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">validData</span></span><span class="pun"><span class="pun">);</span></span><span class="pln"><span class="pln">
+  </span></span><span class="kwd"><span class="kwd">return</span></span><span class="pln"><span class="pln"> saveUserData</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">enrichedData</span></span><span class="pun"><span class="pun">);</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">}</span></span></code></pre>
+<h3>2. Keep Related Code Together</h3>
+<p>Group related functionality together. This might mean organizing by feature, domain concept, or technical concern depending on your project.</p>
+<h3>3. Establish Consistent Naming Conventions</h3>
+<p>Consistent naming makes code navigation intuitive. Follow language-specific conventions and establish team standards for:</p>
+<ul>
+<li>File and directory names</li>
+<li>Classes and functions</li>
+<li>Variables and constants</li>
+<li>Database entities</li>
+</ul>
+<h3>4. Document Your Structure</h3>
+<p>Include a README.md file explaining your project structure, setup instructions, and contribution guidelines. This becomes invaluable as projects grow or when onboarding new team members.</p>
+<h3>5. Separate Configuration from Code</h3>
+<p>Environment-specific settings, API keys, and other configuration values should be separate from your codebase, typically using environment variables or configuration files.</p>
+<h2>Directory Structure Patterns</h2>
+<p>Let’s explore common patterns for organizing code at the directory level:</p>
+<h3>1. Feature-Based Structure</h3>
+<p>Organize code by features or domains rather than technical concerns. This approach works well for large applications with distinct functional areas.</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">project</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> auth</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> services</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> hooks</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> types</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">ts
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> index</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">ts
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> users</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> services</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> hooks</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> types</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">ts
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> index</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">ts
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> products</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> services</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> hooks</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> types</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">ts
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> index</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">ts
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> shared</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">       </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">       </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">       </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> types</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">ts
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">package</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">json
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<p>Benefits of this approach include:</p>
+<ul>
+<li>Easier to understand the business domains of your application</li>
+<li>Facilitates working on a single feature without touching unrelated code</li>
+<li>Supports better code ownership and team organization</li>
+<li>Makes it easier to remove or refactor entire features</li>
+</ul>
+<h3>2. Technical Structure</h3>
+<p>Organize by technical type (components, services, utils, etc.). This approach is common in smaller applications and frameworks that enforce certain structural patterns.</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">project</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Button</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Form</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Modal</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> services</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> api</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> auth</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> storage</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> formatting</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> validation</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> hooks</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> contexts</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> types</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">package</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">json
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<p>This structure is:</p>
+<ul>
+<li>Straightforward and familiar to many developers</li>
+<li>Easy to find technical components by their type</li>
+<li>Often aligned with how frameworks are documented</li>
+</ul>
+<h3>3. Hybrid Approach</h3>
+<p>For larger applications, a hybrid approach often works best, combining aspects of both feature-based and technical structures:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">project</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> features</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> auth</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> users</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> products</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> common</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> layout</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> services</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> types</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">package</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">json
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<h3>4. Monorepo Structure</h3>
+<p>For complex ecosystems with multiple related applications or packages:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">monorepo</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> packages</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> core</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> ui</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> api</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">client</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> apps</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> web</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> mobile</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> admin</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">package</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">json
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<p>This approach is ideal for:</p>
+<ul>
+<li>Sharing code between multiple applications</li>
+<li>Managing complex dependencies</li>
+<li>Coordinating releases across a platform</li>
+</ul>
+<h2>Language-Specific Best Practices</h2>
+<p>Different languages have evolved their own conventions and best practices:</p>
+<h3>JavaScript/TypeScript Projects</h3>
+<p>Modern JavaScript and TypeScript projects typically follow these patterns:</p>
+<h4>Node.js Applications</h4>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">node</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">app</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> controllers</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> models</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> routes</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> services</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> middlewares</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> index</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> tests</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> config</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">package</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">json
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<h4>React Applications</h4>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">react</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">app</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> hooks</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> contexts</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> pages</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> services</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> types</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> assets</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">App</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">tsx
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">public</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">package</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">json
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<h4>Next.js Applications</h4>
+<p>Next.js enforces certain structural conventions with its file-based routing system:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="kwd"><span class="kwd">next</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">app</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> app</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">routes</span></span><span class="pun"><span class="pun">)/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> api</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> layout</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">tsx
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> page</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">tsx
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> lib</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">public</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">next</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">config</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">package</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">json
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<h3>Python Projects</h3>
+<p>Python projects often follow these conventions:</p>
+<h4>Django Applications</h4>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">django</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">project</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> project_name</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> settings</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> urls</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> wsgi</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> asgi</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> app1</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> migrations</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> templates</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">static</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> models</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> views</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> urls</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> tests</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> app2</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> manage</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> requirements</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">txt
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<h4>Flask Applications</h4>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">flask</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">app</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> app</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> __init__</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> routes</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> models</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> services</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> templates</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">static</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> tests</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> config</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> requirements</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">txt
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<h4>General Python Packages</h4>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">python</span></span><span class="pun"><span class="pun">-</span></span><span class="kwd"><span class="kwd">package</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> package_name</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> __init__</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> module1</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> module2</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> subpackage</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">       </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> __init__</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">       </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> module3</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> tests</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> docs</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> setup</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> requirements</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">txt
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<h3>Java Projects</h3>
+<p>Java projects typically follow a package structure by domain:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">java</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">project</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> main</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> java</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> com</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">       </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> company</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">           </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> project</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">               </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> controller</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">               </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> service</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">               </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> repository</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">               </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> model</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">               </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> config</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">               </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> util</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> resources</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> test</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">       </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> java</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">       </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> resources</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> pom</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">xml
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<h3>C# Projects</h3>
+<p>C# projects often follow similar conventions to Java, with namespaces organized by feature or layer:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">csharp</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">project</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">ProjectName</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Controllers</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Services</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Repositories</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Models</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">ViewModels</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Helpers</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">ProjectName</span></span><span class="pun"><span class="pun">.</span></span><span class="typ"><span class="typ">Tests</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">ProjectName</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">sln
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<h2>Project-Specific Organization Strategies</h2>
+<p>Beyond language-specific patterns, consider the type of project you’re building:</p>
+<h3>Microservices Architecture</h3>
+<p>Each microservice should be a self-contained application with its own repository or directory:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">microservices</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> service</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">a</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> tests</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Dockerfile</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">package</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">json
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> service</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">b</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> tests</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Dockerfile</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">package</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">json
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> api</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">gateway</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> docker</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">compose</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">yml
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<h3>Serverless Applications</h3>
+<p>Organize by function or domain, with each function having a clear single responsibility:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">serverless</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">app</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> functions</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> auth</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> login</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">register</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> verify</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> users</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> create</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">get</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> update</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> products</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> layers</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> common</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> database</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> serverless</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">yml
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<h3>Mobile Applications</h3>
+<p>Mobile apps often benefit from a feature-based structure:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">mobile</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">app</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> features</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> auth</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> profile</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> feed</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> navigation</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> services</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> assets</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> android</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> ios</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">package</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">json
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<h2>File Organization Best Practices</h2>
+<p>Beyond directory structure, consider how to organize code within files:</p>
+<h3>Keep Files Focused and Small</h3>
+<p>Aim for files that are focused on a single responsibility. Large files are harder to navigate and understand. Consider breaking down files that exceed 300-500 lines of code.</p>
+<h3>Order Code Logically</h3>
+<p>Within files, organize code in a logical sequence:</p>
+<ul>
+<li>Imports/dependencies first</li>
+<li>Constants and configuration</li>
+<li>Type definitions/interfaces</li>
+<li>Helper functions</li>
+<li>Main functionality</li>
+<li>Exports last</li>
+</ul>
+<h3>Group Related Functions</h3>
+<p>Keep related functions near each other in the file, or consider extracting them to a dedicated file if they form a coherent group.</p>
+<h3>Use Clear, Descriptive Names</h3>
+<p>File names should clearly indicate what the file contains. Avoid generic names like “utils.js” or “helpers.js” without additional context.</p>
+<h2>Modular Code Organization</h2>
+<p>Breaking your code into modules improves maintainability and reusability:</p>
+<h3>Create Clear Module Boundaries</h3>
+<p>Each module should have a well-defined responsibility and API. Use explicit exports to define the public interface of each module.</p>
+<h3>Minimize Dependencies Between Modules</h3>
+<p>Aim for loose coupling between modules. If two modules are highly interdependent, consider whether they should be merged or restructured.</p>
+<h3>Use Barrel Files for Organized Exports</h3>
+<p>In TypeScript/JavaScript projects, “barrel” files (index.ts/js) can simplify imports by re-exporting from multiple files:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="com"><span class="com">// components/index.ts</span></span><span class="pln"><span class="pln">
+</span></span><span class="kwd"><span class="kwd">export</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">*</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">from</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'./Button'</span></span><span class="pun"><span class="pun">;</span></span><span class="pln"><span class="pln">
+</span></span><span class="kwd"><span class="kwd">export</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">*</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">from</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'./Input'</span></span><span class="pun"><span class="pun">;</span></span><span class="pln"><span class="pln">
+</span></span><span class="kwd"><span class="kwd">export</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">*</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">from</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'./Modal'</span></span><span class="pun"><span class="pun">;</span></span></code></pre>
+<p>This allows consumers to import from the directory rather than individual files:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="com"><span class="com">// Instead of:</span></span><span class="pln"><span class="pln">
+</span></span><span class="kwd"><span class="kwd">import</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Button</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">}</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">from</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'./components/Button'</span></span><span class="pun"><span class="pun">;</span></span><span class="pln"><span class="pln">
+</span></span><span class="kwd"><span class="kwd">import</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Input</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">}</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">from</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'./components/Input'</span></span><span class="pun"><span class="pun">;</span></span><span class="pln"><span class="pln">
+
+</span></span><span class="com"><span class="com">// You can do:</span></span><span class="pln"><span class="pln">
+</span></span><span class="kwd"><span class="kwd">import</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Button</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Input</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">}</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">from</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'./components'</span></span><span class="pun"><span class="pun">;</span></span></code></pre>
+<h2>Testing Structure</h2>
+<p>Organized test code is just as important as organized application code:</p>
+<h3>Mirror Your Source Structure</h3>
+<p>Tests should typically mirror your source code structure, making it easy to find tests for specific components:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Button</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Modal</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+    </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> format</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+
+tests</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Button</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">test</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Modal</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">test</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+    </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> format</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">test</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js</span></span></code></pre>
+<h3>Co-locate Tests with Source Code</h3>
+<p>Alternatively, keep tests next to the code they test:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Button</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Button</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">test</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Modal</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Modal</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">test</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+    </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> format</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+    </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> format</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">test</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js</span></span></code></pre>
+<h3>Organize Integration and E2E Tests</h3>
+<p>While unit tests might mirror source structure, integration and end-to-end tests often test features or user flows:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">tests</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> unit</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> integration</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> auth</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">flow</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">test</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> checkout</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">flow</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">test</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> e2e</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+    </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> user</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">journey</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">test</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+    </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> admin</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">journey</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">test</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js</span></span></code></pre>
+<h2>Documentation Organization</h2>
+<p>Well-organized documentation is crucial for project maintainability:</p>
+<h3>README.md</h3>
+<p>Your project’s README should include:</p>
+<ul>
+<li>Project overview and purpose</li>
+<li>Installation instructions</li>
+<li>Basic usage examples</li>
+<li>Directory structure explanation</li>
+<li>Contribution guidelines</li>
+<li>License information</li>
+</ul>
+<h3>Code Documentation</h3>
+<p>Document your code with comments that explain “why” rather than “what”:</p>
+<ul>
+<li>Use JSDoc, docstrings, or similar for APIs and public functions</li>
+<li>Document complex algorithms and business logic</li>
+<li>Explain non-obvious design decisions</li>
+</ul>
+<h3>Architecture Documentation</h3>
+<p>For larger projects, maintain architecture documentation:</p>
+<ul>
+<li>System diagrams</li>
+<li>Data flow explanations</li>
+<li>Design patterns used</li>
+<li>Key architectural decisions and their rationales</li>
+</ul>
+<h2>Version Control Organization</h2>
+<p>Effective use of version control contributes to code organization:</p>
+<h3>.gitignore</h3>
+<p>Maintain a comprehensive .gitignore file to exclude non-source files:</p>
+<ul>
+<li>Build artifacts</li>
+<li>Dependencies (node_modules, vendor directories)</li>
+<li>Environment-specific files</li>
+<li>Editor-specific files</li>
+<li>Log files and temporary data</li>
+</ul>
+<h3>Branching Strategy</h3>
+<p>Adopt a clear branching strategy like Git Flow or GitHub Flow:</p>
+<ul>
+<li>main/master for production code</li>
+<li>develop for ongoing development</li>
+<li>feature branches for new features</li>
+<li>release branches for preparing releases</li>
+<li>hotfix branches for emergency fixes</li>
+</ul>
+<h3>Commit Organization</h3>
+<p>Use semantic commit messages to make history more navigable:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">feat</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">add</span></span><span class="pln"><span class="pln"> user authentication
+fix</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> resolve login redirect issue
+docs</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> update API documentation
+refactor</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> simplify validation logic
+test</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">add</span></span><span class="pln"><span class="pln"> unit tests </span></span><span class="kwd"><span class="kwd">for</span></span><span class="pln"><span class="pln"> auth service</span></span></code></pre>
+<h2>Tools for Better Code Organization</h2>
+<p>Several tools can help maintain code organization:</p>
+<h3>Linters and Formatters</h3>
+<p>Tools like ESLint, Prettier, Black, or ReSharper enforce consistent code style and can catch structural issues:</p>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln">
+  </span></span><span class="str"><span class="str">"extends"</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">[</span></span><span class="str"><span class="str">"eslint:recommended"</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">"plugin:react/recommended"</span></span><span class="pun"><span class="pun">],</span></span><span class="pln"><span class="pln">
+  </span></span><span class="str"><span class="str">"rules"</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">{</span></span><span class="pln"><span class="pln">
+    </span></span><span class="str"><span class="str">"max-lines"</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">[</span></span><span class="str"><span class="str">"error"</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="lit"><span class="lit">300</span></span><span class="pun"><span class="pun">],</span></span><span class="pln"><span class="pln">
+    </span></span><span class="str"><span class="str">"max-depth"</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">[</span></span><span class="str"><span class="str">"error"</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="lit"><span class="lit">4</span></span><span class="pun"><span class="pun">],</span></span><span class="pln"><span class="pln">
+    </span></span><span class="str"><span class="str">"complexity"</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">[</span></span><span class="str"><span class="str">"error"</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="lit"><span class="lit">10</span></span><span class="pun"><span class="pun">]</span></span><span class="pln"><span class="pln">
+  </span></span><span class="pun"><span class="pun">}</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">}</span></span></code></pre>
+<h3>Code Generators</h3>
+<p>Use scaffolding tools to create consistent file structures:</p>
+<ul>
+<li>Create React App for React projects</li>
+<li>Angular CLI for Angular projects</li>
+<li>Rails generators for Ruby on Rails</li>
+<li>Custom templates with tools like Plop.js</li>
+</ul>
+<h3>Dependency Management</h3>
+<p>Organize dependencies with tools like npm, yarn, pip, or Maven:</p>
+<ul>
+<li>Separate runtime dependencies from development dependencies</li>
+<li>Use lock files for deterministic builds</li>
+<li>Consider monorepo tools like Lerna, Nx, or Turborepo for complex projects</li>
+</ul>
+<h2>Evolving Your Code Organization</h2>
+<p>Code organization should evolve as your project grows:</p>
+<h3>Start Simple</h3>
+<p>For new projects, start with a simple structure and add complexity only as needed. Premature organization can be as problematic as disorganization.</p>
+<h3>Refactor Regularly</h3>
+<p>Schedule regular refactoring sessions to improve organization. Address areas where:</p>
+<ul>
+<li>Files have grown too large</li>
+<li>Directories contain unrelated code</li>
+<li>Dependencies have become tangled</li>
+<li>Similar code exists in multiple places</li>
+</ul>
+<h3>Get Team Consensus</h3>
+<p>For team projects, establish consensus on organizational patterns. Document decisions in a style guide or contribution guidelines.</p>
+<h2>Case Study: Refactoring a Disorganized Project</h2>
+<p>Let’s examine a case study of refactoring a disorganized project to improve its structure:</p>
+<h3>Before: Flat Structure with Mixed Concerns</h3>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">project</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> api</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> auth</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> helpers</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> main</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> styles</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">css
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js</span></span></code></pre>
+<p>Issues with this structure:</p>
+<ul>
+<li>Files are too large with mixed responsibilities</li>
+<li>No clear organization principle</li>
+<li>Difficult to find specific functionality</li>
+<li>Hard to maintain and extend</li>
+</ul>
+<h3>After: Feature-Based Organization</h3>
+<pre class=" prettyprinted" style=""><code class=" prettyprinted" style=""><span class="pln"><span class="pln">project</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> src</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> auth</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">LoginForm</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">SignupForm</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> services</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> authService</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> index</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> users</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> services</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> index</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> shared</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> components</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> utils</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> styles</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">│</span></span><span class="pln"><span class="pln">   </span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> app</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">js
+</span></span><span class="pun"><span class="pun">├──</span></span><span class="pln"><span class="pln"> tests</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">
+</span></span><span class="pun"><span class="pun">└──</span></span><span class="pln"><span class="pln"> README</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">md</span></span></code></pre>
+<p>Benefits of the refactored structure:</p>
+<ul>
+<li>Clear organization by feature</li>
+<li>Smaller, focused files with single responsibilities</li>
+<li>Easier to navigate and find relevant code</li>
+<li>Better separation of concerns</li>
+<li>More maintainable as the project grows</li>
+</ul>
+<h2>Common Pitfalls to Avoid</h2>
+<p>Watch out for these common organizational mistakes:</p>
+<h3>Overengineering</h3>
+<p>Don’t create complex structures for simple projects. The organization should match the project’s complexity and team size.</p>
+<h3>Inconsistent Patterns</h3>
+<p>Once you establish an organizational pattern, apply it consistently throughout the project.</p>
+<h3>Premature Abstraction</h3>
+<p>Don’t create elaborate abstractions until you have a clear understanding of the problem domain and requirements.</p>
+<h3>Circular Dependencies</h3>
+<p>Avoid circular dependencies between modules, as they indicate poor separation of concerns.</p>
+<h3>Outdated Documentation</h3>
+<p>Keep documentation about your project structure updated as the organization evolves.</p>
+<h2>Conclusion</h2>
+<p>Effective code organization is both an art and a science. The “best” structure depends on your project’s size, complexity, team composition, and specific requirements. However, by following these general principles, you can create a codebase that’s maintainable, scalable, and pleasant to work with.</p>
+<p>Remember these key takeaways:</p>
+<ul>
+<li>Choose an organization scheme that suits your project’s specific needs</li>
+<li>Follow the single responsibility principle at all levels</li>
+<li>Keep related code together</li>
+<li>Establish and maintain consistent naming conventions</li>
+<li>Document your structure</li>
+<li>Refactor regularly as your project evolves</li>
+<li>Use tools to help maintain organization</li>
+<li>Get team consensus on organizational patterns</li>
+</ul>
+<p>By investing time in thoughtful code organization from the start, you’ll save countless hours of confusion, debugging, and refactoring in the future. Your codebase is a living entity that requires ongoing care and attention to its structure as it grows and evolves.</p>
+    </div>
+</article>
+
+<nav class="post-navigation">
+    <div class="post-nav-grid">
+                    <a href="https://algocademy.com/blog/competitive-programming-to-coding-interviews/" class="post-nav-link prev">
+                <div class="post-nav-content">
+                    <span class="post-nav-label">Previous Article</span>
+                    <h3 class="post-nav-title">Switching from Competitive Programming to Coding Interviews</h3>
+                </div>
+                <img src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/compressed_image-89-300x171.jpg" alt="Switching from Competitive Programming to Coding Interviews" class="post-nav-image">
+            </a>
+        
+                    <a href="https://algocademy.com/blog/how-to-transform-your-coding-hobby-projects-into-professional-portfolio-pieces/" class="post-nav-link next">
+                <div class="post-nav-content">
+                    <span class="post-nav-label">Next Article</span>
+                    <h3 class="post-nav-title">How to Transform Your Coding Hobby Projects into Professional Portfolio Pieces</h3>
+                </div>
+                <img src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/compressed_image-56-300x171.webp" alt="How to Transform Your Coding Hobby Projects into Professional Portfolio Pieces" class="post-nav-image">
+            </a>
+            </div>
+</nav>
+
+<section id="footer" class="footer">
+    <div class="footer-container">
+        <div class="container no-margin">
+            <img src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/logo-light.svg" alt="AlgoCademy Blog" class="logo _40px">            <p class="paragraph white top-margin">Our interactive tutorials and AI-assisted learning will help you master <b>problem-solving skills</b> and teach you the algorithms to know for <b>coding interviews</b>.</p>
+            <div class="container horizontal">
+          <a href="https://www.linkedin.com/company/algocademy" target="_blank" class="footer-icon w-inline-block"><img src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/linkedin-white-icon.svg" loading="lazy" alt="" class="icon _24px"></a>
+          <a href="https://www.youtube.com/@algocademy.podcast" target="_blank" class="footer-icon w-inline-block"><img src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/yotuube-white-icon.svg" loading="lazy" alt="" class="icon _24px"></a>
+          <a href="https://web.facebook.com/algocademy/" target="_blank" class="footer-icon w-inline-block"><img src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/fb-white-icon.svg" loading="lazy" alt="" class="icon _24px"></a>
+          <a href="https://twitter.com/algocademy" target="_blank" class="footer-icon w-inline-block"><img src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/twitter-white-icon.svg" loading="lazy" alt="" class="icon _24px"></a>
+          <a href="https://www.instagram.com/algocademy/" target="_blank" class="footer-icon w-inline-block"><img src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/ig-white-icon.svg" loading="lazy" alt="" class="icon _24px"></a>
+        </div>
+            <div class="container horizontal">
+                            </div>
+        </div>
+        
+        <div class="container no-margin">
+            <p class="paragraph bold white" style="display:none;">Links</p>
+                    </div>
+        
+        <div class="container no-margin">
+            <p class="paragraph bold white"><b>Legal</b></p>
+            <a href="https://algocademy.com/privacy.html" class="paragraph white bottom-margin-8">Privacy Policy</a>
+            <a href="https://algocademy.com/tos.html" class="paragraph white bottom-margin-8">Terms of Service</a>
+        </div>
+        
+        <div class="container">
+            <p class="paragraph small white">© 2025 AlgoCademy Blog. All rights reserved.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Exit Intent Modal -->
+<div class="exit-intent-wrapper">
+    <div class="modal fade" id="exitIntentModal" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>×</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center px-4 pb-5">
+                    <h3 class="h4 mb-4">Go From “I Suck at Coding” to Landing Your Dream Job</h3>
+
+                    <p class="mb-4">Our interactive tutorials and AI-assisted learning will help you master <b>problem-solving skills</b> and teach you the algorithms to know for <b>coding interviews</b>.</p>
+
+                    <a href="https://algocademy.com/app" class="cta green mb-4">Start Coding for FREE</a>
+                    <br>
+
+
+                    <div class="video-wrapper mt-4i">
+                        <video style="width:100%; border-radius:15px;" autoplay="" loop="" muted="" playsinline="">
+                            <source src="https://algocademy.com/resources/animation-algocademy-21.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Scoped Modal Styles - Only affects the modal */
+.exit-intent-wrapper {
+    /* Modal Basic Structure */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1055;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        outline: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal.fade .modal-dialog {
+        transition: transform .3s ease-out;
+        transform: translate(0, -50px);
+    }
+
+    .modal.show .modal-dialog {
+        transform: none;
+    }
+
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: 1.75rem auto;
+        max-width: 500px;
+    }
+
+    .modal-dialog-centered {
+        display: flex;
+        align-items: center;
+        min-height: calc(100% - 3.5rem);
+    }
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 16px;
+        outline: 0;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    .modal-header {
+        padding: 1rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        border: none;
+    }
+
+    .modal-body {
+        position: relative;
+        flex: 1 1 auto;
+        padding: 2rem 1rem;
+    }
+
+    /* Close Button */
+    .close {
+        float: right;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: .5;
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+        appearance: none;
+    }
+
+    .close:hover {
+        color: #000;
+        opacity: .75;
+    }
+
+    /* Custom Styles */
+    .modal-content {
+        border: none;
+    }
+
+    .close {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: white;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 0;
+    }
+
+    .close:hover {
+        background: #f8f9fa;
+    }
+
+    .modal-body {
+        padding-top: 2rem;
+    }
+
+    h3 {
+        color: #111827;
+        font-weight: 700;
+        line-height: 1.6;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: #4B5563;
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+
+    .cta.green {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        background: #96bd3c;
+        color: white;
+        border-radius: 8px;
+        transition: transform 0.2s ease;
+    }
+
+    .cta.green:hover {
+        transform: translateY(-2px);
+    }
+
+    .video-wrapper {
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Utility classes */
+    .text-center { text-align: center; }
+    .mb-4 { margin-bottom: 1.5rem; }
+    .mt-4 { margin-top: 1.5rem; }
+    .px-4 { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .pb-5 { padding-bottom: 3rem; }
+}
+
+@media (max-width: 576px) {
+    .exit-intent-wrapper .modal-dialog {
+        margin: 1rem;
+    }
+
+    .exit-intent-wrapper h3 {
+        font-size: 1.25rem;
+    }
+}
+</style>
+
+<!-- Only include necessary Bootstrap JS -->
+<script src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/bootstrap.bundle.min.js.download"></script>
+
+<script>
+function saveCampaign(campaign) {
+    if (localStorage.getItem('campaign') !== null) {
+        return;
+    }
+    localStorage.setItem('campaign', campaign);
+}
+
+/**
+ * Gets campaign from URL - uses path slug or campaign parameter
+ * @param {boolean} saveToStorage - Whether to save the campaign to localStorage
+ * @returns {string} The extracted campaign value
+ */
+function getCampaignFromUrl(saveToStorage = true) {
+    const urlParams = new URLSearchParams(location.search);
+
+    // Extract the path from the URL and remove leading/trailing slashes
+    let campaign = location.pathname.replace(/^\/|\/$/g, '');
+
+    // If the path is empty (e.g., homepage), use a default value
+    if (!campaign) {
+        campaign = 'blog';
+    }
+
+    // Override with campaign parameter if it exists in the URL
+    if (location.search.indexOf('campaign=') !== -1) {
+        campaign = urlParams.get('campaign');
+    }
+
+    // Save to localStorage if requested
+    if (saveToStorage) {
+        saveCampaign(campaign);
+    }
+
+    return campaign;
+}
+
+
+jQuery(document).ready(function($) {
+    getCampaignFromUrl();
+
+    if (true || !sessionStorage.getItem('exitShown')) {
+        let hasShownModal = false;
+        
+        function showExitIntentModal() {
+            if (!hasShownModal) {
+                $('#exitIntentModal').modal('show');
+                hasShownModal = true;
+                sessionStorage.setItem('exitShown', 'true');
+            }
+        }
+
+        // Desktop exit intent
+        $(document).on('mouseleave', function(e) {
+            if (e.clientY < 10) {
+                showExitIntentModal();
+            }
+        });
+
+         // mobile exit intent
+         jQuery(document).on('touchstart', function(){
+             window.onMobileDevice = true;
+         });
+
+         function myScrollSpeedFunction(){
+             if( window.onMobileDevice ) {
+                 const speed = my_scroll();
+                 if(speed < -20){
+                     //Your code here to display Exit Intent popup
+                     showExitIntentModal();
+                 }
+             }
+         }
+
+         var my_scroll = (function(){ //Function that checks the speed of scrolling
+         var last_position, new_position, timer, delta, delay = 50;
+         function clear() {
+             last_position = null;
+             delta = 0;
+         }
+
+         clear();
+         return function(){
+             new_position = window.scrollY;
+             if ( last_position != null ){
+                 delta = new_position -  last_position;
+             }
+             last_position = new_position;
+             clearTimeout(timer);
+             timer = setTimeout(clear, delay);
+             return delta;
+         };
+         })();
+
+         jQuery(document).on('scroll', myScrollSpeedFunction );
+    }
+});
+</script>
+
+
+    <script>
+    jQuery(document).ready(function($) {
+        $('.menu-button').click(function() {
+            $('.nav-menu').slideToggle();
+            $(this).toggleClass('active');
+        });
+
+        // Handle responsive menu
+        $(window).resize(function() {
+            if ($(window).width() > 991) {
+                $('.nav-menu').show();
+            }
+        });
+    });
+    </script>
+    <script type="text/javascript" id="code-prettify-js-extra">
+/* <![CDATA[ */
+var codePrettifyLoaderBaseUrl = "https:\/\/algocademy.com\/blog\/wp-content\/plugins\/code-prettify\/prettify";
+/* ]]> */
+</script>
+
+<script type="text/javascript" src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/navigation.js.download" id="algocademy-navigation-js"></script>
+<script type="text/javascript" src="./The Ultimate Guide to Structuring and Organizing Code Projects for Maximum Efficiency – AlgoCademy Blog_files/MathJax.js.download" id="mathjax-js"></script>
+
+
+</body></html>

@@ -1,0 +1,199 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+.site-header {
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.site-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.site-header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.site-header nav ul li {
+  margin-left: 20px;
+}
+
+.site-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-header nav ul li a:hover {
+  color: #f4b400;
+}
+
+/* Hero */
+.hero {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.hero .btn {
+  background: #f4b400;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero .btn:hover {
+  background: #d89c00;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.category img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.category h3 {
+  margin-top: 10px;
+}
+
+/* Products */
+.products {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-card h4 {
+  margin: 10px 0;
+}
+
+/* About */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  background: #eee;
+}
+
+/* Contact */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.map-placeholder {
+  margin-top: 20px;
+  height: 200px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Brands Section */
+.brands {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.brands h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.brand-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+}
+
+.brand-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
